@@ -1,0 +1,13 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../storypro.scss",
+        "../shared/_mixins.scss",
+        "../shared/_functions.scss",
+        "../storypro/_variables.scss",
+        "../storypro/_global.scss"
+    ],
+    "names": [],
+    "file": "storypro.css"
+}

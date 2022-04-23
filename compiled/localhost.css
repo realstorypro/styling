@@ -1,0 +1,48 @@
+:root {
+  --fullscreen-header-font-size: 30px;
+}
+
+.colorblock.element-315 {
+  --colorblock-padding: 30em 5em;
+  --colorblock-clip-path: polygon(85% 6%, 70% 15%, 30% 15%, 15% 5%, 0% 25%, 10% 45%, 10% 75%, 25% 90%, 40% 95%, 60% 95%, 75% 91%, 90% 75%, 90% 45%, 100% 25%);
+  --colorblock-min-height: 150vh;
+  --fullscreen-header-font-size: 100px;
+  --purple-text-color: rgb(252, 118, 0);
+  --fullscreen-table-animation: jello-vertical ease-in-out 3s infinite;
+  --fullscreen-table-background-color: rgb(212, 0, 255);
+  --fullscreen-table-background-image: '';
+  --fullscreen-table-padding: 3em;
+  --fullscreen-table-border-color: yellow;
+  --fullscreen-table-border-width: 10p;
+  --fullscreen-table-border-style: dashed;
+  --fullscreen-table-border-radius: 10px;
+  --fullscreen-table-font-size: 2.5em;
+  --fullscreen-table-font-weight: bold;
+  --fullscreen-header-text-shadow: 5px 5px #fff;
+  --fullscreen-summary-text-shadow: 5px 5px #fff;
+}
+
+@keyframes jello-vertical {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+  30% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  40% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  50% {
+    transform: scale3d(0.85, 1.15, 1);
+  }
+  65% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  75% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+/*# sourceMappingURL=localhost.css.map */
