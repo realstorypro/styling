@@ -22,8 +22,12 @@
     --fullscreen-header-text-shadow: 5px 5px #fff;
     --fullscreen-summary-text-shadow: 5px 5px #fff;
 
+    @include media("<desktop"){
+      --colorblock-clip-path: none;
+    }
 
-@-webkit-keyframes jello-vertical {
+
+  @-webkit-keyframes jello-vertical {
     0% {
       -webkit-transform: scale3d(1, 1, 1);
               transform: scale3d(1, 1, 1);
