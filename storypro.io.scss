@@ -1,0 +1,14 @@
+@import "./shared/mixins";
+@import "./shared/functions";
+@import "./storypro/variables";
+@import "./storypro/global";
+    
+:root {
+  --page-background-color: rgb(0, 0, 0);
+  --page-background-image: url("data:image/svg+xml,%3Csvg id='background' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' viewBox='0 0 500 500' shape-rendering='geometricPrecision' text-rendering='geometricPrecision'%3E%3Cstyle%3E%3C!%5BCDATA%5B%23background-ellipse1_ts %7Banimation: background-ellipse1_ts__ts 3000ms linear infinite normal forwards%7D@keyframes background-ellipse1_ts__ts %7B 0%25 %7Btransform: translate(266.073919px,259.100419px) scale(1,1)%7D 6.666667%25 %7Btransform: translate(266.073919px,259.100419px) scale(1.1,1)%7D 13.333333%25 %7Btransform: translate(266.073919px,259.100419px) scale(1.1,1.349634)%7D 20%25 %7Btransform: translate(266.073919px,259.100419px) scale(0.199428,1.349634)%7D 26.666667%25 %7Btransform: translate(266.073919px,259.100419px) scale(1,1)%7D 100%25 %7Btransform: translate(266.073919px,259.100419px) scale(1,1)%7D%7D%5D%5D%3E%3C/style%3E%3Cg id='background-ellipse1_ts' transform='translate(266.073919,259.100419) scale(1,1)'%3E%3Cellipse id='background-ellipse1' rx='175' ry='175' transform='translate(-16.073919,-9.100419)' fill='%23185ce3' stroke-width='0'/%3E%3C/g%3E%3C/svg%3E%0A");
+  --page-background-size: max(calc(4% * 10 * var(--global-percent)), 5.5%);
+  --page-animation: '';
+  --page-background-position: calc(var(--global-percent) * 50px) calc(var(--global-percent) * 250px);
+  --text-color: white;
+  --font-size: 1.1em;
+}
