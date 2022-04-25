@@ -18,18 +18,178 @@ $n2: var(--engager-percent-reversed);
 $f1: var(--percent);
 $f2: var(--percent-reversed);
 
-// transition c1
+// shortcuts for g1 & g2 (global)
+@function txg1($from, $to) {
+  @return tg1($from, $to, px)
+}
+
+@function txg2($from, $to) {
+  @return tg2($from, $to, px)
+}
+
+@function tpg1($from, $to) {
+  @return tg1($from, $to, '%')
+}
+
+@function tpg2($from, $to) {
+  @return tg2($from, $to, '%')
+}
+
+@function tdg1($from, $to) {
+  @return tg1($from, $to, deg)
+}
+
+@function tdg2($from, $to) {
+  @return tg2($from, $to, deg)
+}
+
+// shortcuts for e1 & e2 (entry)
+@function txe1($from, $to) {
+  @return te1($from, $to, px)
+}
+
+@function txe2($from, $to) {
+  @return te2($from, $to, px)
+}
+
+@function tpe1($from, $to) {
+  @return te1($from, $to, '%')
+}
+
+@function tpe2($from, $to) {
+  @return te2($from, $to, '%')
+}
+
+@function tde1($from, $to) {
+  @return te1($from, $to, deg)
+}
+
+@function tde2($from, $to) {
+  @return te2($from, $to, deg)
+}
+
+// shortcuts for c1 & c2 (comments)
+@function txc1($from, $to) {
+  @return tc1($from, $to, px)
+}
+
+@function txc2($from, $to) {
+  @return tc2($from, $to, px)
+}
+
+@function tpc1($from, $to) {
+  @return tc1($from, $to, '%')
+}
+
+@function tpc2($from, $to) {
+  @return tc2($from, $to, '%')
+}
+
+@function tdc1($from, $to) {
+  @return tc1($from, $to, deg)
+}
+
+@function tdc2($from, $to) {
+  @return tc2($from, $to, deg)
+}
+
+// shortcuts for n1 & n2 (engager)
+@function txn1($from, $to) {
+  @return tn1($from, $to, px)
+}
+
+@function txn2($from, $to) {
+  @return tn2($from, $to, px)
+}
+
+@function tpn1($from, $to) {
+  @return tn1($from, $to, '%')
+}
+
+@function tpn2($from, $to) {
+  @return tn2($from, $to, '%')
+}
+
+@function tdn1($from, $to) {
+  @return tn1($from, $to, deg)
+}
+
+@function tdn2($from, $to) {
+  @return tn2($from, $to, deg)
+}
+
+// shortcuts for f1 & f2 (snippet)
+@function txf1($from, $to) {
+  @return tf1($from, $to, px)
+}
+
+@function txf2($from, $to) {
+  @return tf2($from, $to, px)
+}
+
+@function tpf1($from, $to) {
+  @return tf1($from, $to, '%')
+}
+
+@function tpf2($from, $to) {
+  @return tf2($from, $to, '%')
+}
+
+@function tdf1($from, $to) {
+  @return tf1($from, $to, deg)
+}
+
+@function tdf2($from, $to) {
+  @return tf2($from, $to, deg)
+}
+
+// transition g1 & g2 (global)
+@function tg1($from, $to, $unit) {
+  @return trans($from, $to, $unit, $g1)
+}
+
+@function tg2($from, $to, $unit) {
+  @return trans($from, $to, $unit, $g2)
+}
+
+// transition e1 & e2 (entry)
+@function te1($from, $to, $unit) {
+  @return trans($from, $to, $unit, $e1)
+}
+
+@function te2($from, $to, $unit) {
+  @return trans($from, $to, $unit, $e2)
+}
+
+// transition c1 & c2 (comments)
 @function tc1($from, $to, $unit) {
   @return trans($from, $to, $unit, $c1)
 }
 
-// transition c2
 @function tc2($from, $to, $unit) {
   @return trans($from, $to, $unit, $c2)
+}
+
+// transition n1 & n2 (engager)
+@function tn1($from, $to, $unit) {
+  @return trans($from, $to, $unit, $n1)
+}
+
+@function tn2($from, $to, $unit) {
+  @return trans($from, $to, $unit, $n2)
+}
+
+// transition f1 & f2 (snippet)
+@function tf1($from, $to, $unit) {
+  @return trans($from, $to, $unit, $f1)
+}
+
+@function tf2($from, $to, $unit) {
+  @return trans($from, $to, $unit, $f2)
 }
 
 // the transition function
 @function trans($from, $to, $unit, $variable){
   $distance: $to - $from;
-  @return calc((#{$from} + #{$distance} * #{$variable}) * 1#{$unit})
+  @return calc((#{$from} + #{$distance} * #{$variable}) * 1#{$unit});
 }

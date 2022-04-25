@@ -1,3 +1,8 @@
+// Borders
+@mixin border-svg($prefix, $value){
+  --#{$prefix}border-svg: #{$value};
+}
+
 // Background
 @mixin bg_color($prefix, $value){
   --#{$prefix}background-color: #{$value};
