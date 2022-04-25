@@ -1,0 +1,49 @@
+// Background
+@mixin bg_color($prefix, $value){
+  --#{$prefix}background-color: #{$value};
+}
+
+@mixin bg_image($prefix, $value){
+  --#{$prefix}background-image: #{$value};
+}
+
+@mixin bg_clip($prefix, $value) {
+  --#{$prefix}background-clip: #{$value};
+}
+
+@mixin bg_size($prefix, $value) {
+  --#{$prefix}background-size: #{$value};
+}
+
+@mixin bg_repeat($prefix, $value){
+  --#{$prefix}background-repeat: #{$value};
+}
+
+@mixin bg_position($prefix, $value){
+  --#{$prefix}background-position: #{$value};
+}
+
+// Interactive
+@mixin filter($prefix, $value){
+  --#{$prefix}filter: #{$value};
+}
+
+@mixin perspective($prefix, $value){
+  --#{$prefix}perspective: #{$value};
+}
+
+@mixin animation($prefix, $value){
+  --#{$prefix}animation: #{$value};
+}
+
+@mixin transform($prefix, $value){
+  --#{$prefix}transform: #{$value};
+}
+
+@mixin filter($prefix, $value){
+  --#{$prefix}filter: #{$value};
+}
+
+@mixin backdrop_filter($prefix, $value){
+  --#{$prefix}backdrop-filter: #{$value};
+}
