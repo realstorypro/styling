@@ -1,0 +1,16 @@
+
+$purple: rgba(77,12,244,1);
+
+$violet: rgba(125,13,244,1);
+$violet2: rgba(125,13,244,1);
+$violet3: rgba(174,18,243,1);
+$violet4: rgba(230,11,237,1);
+$violet5: rgba(131,58,180,1);
+
+$red: rgba(253,29,29,1);
+$orange: rgba(252,176,69,1);
+$green: rgba(0,255,11,1);
+
+$g-purple-violet1: linear-gradient(135deg, $purple 18%, $violet 47%, $violet3 81%, $violet4 100%);
+$g-purple-violet2: linear-gradient(225deg, $purple 18%, $violet 47%, $violet3 81%, $violet4 100%);
+$gradient2: linear-gradient(306deg, $violet5 0%, $red 50%, $orange 100%);
