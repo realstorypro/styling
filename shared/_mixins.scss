@@ -160,7 +160,7 @@
 }
 
 // Borders
-@mixin border($prefix, $position: '', $value){
+@mixin border($prefix, $position: '', $value: ''){
   @include border_color($prefix, $position, $value);
   @include border_width($prefix, $position, $value);
   @include border_style($prefix, $position, $value);
@@ -170,19 +170,19 @@
   }
 }
 
-@mixin border_color($prefix, $position: '', $value){
+@mixin border_color($prefix, $position: '', $value: ''){
   --#{$prefix}border-color: $value
 }
 
-@mixin border_width($prefix, $position: '', $value){
+@mixin border_width($prefix, $position: '', $value: ''){
   --#{$prefix}border-width: $value
 }
 
-@mixin border_style($prefix, $position: '', $value){
+@mixin border_style($prefix, $position: '', $value: ''){
   --#{$prefix}border-style: $value
 }
 
-@mixin border_radius($prefix, $position: '', $value){
+@mixin border_radius($prefix, $position: '', $value: ''){
   --#{$prefix}border-radius: $value
 }
 

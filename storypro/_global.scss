@@ -6,8 +6,7 @@
   @include border_svg('author-widget-', '');
 }
 
-hue-rotate(#{tdc1(30, 360)})
-
 #engager{
   @include filter('engager-', hue-rotate(#{tdn1(0, 10)}));
+
 }
