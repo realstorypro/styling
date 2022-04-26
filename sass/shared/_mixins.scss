@@ -36,6 +36,10 @@
   --#{$prefix}backdrop-filter: #{$value}
 }
 
+@mixin opacity($prefix, $value){
+  --#{$prefix}opacity: #{$value}
+}
+
 // Text
 @mixin font_weight($prefix, $value){
   --#{$prefix}font-weight: #{$value}
