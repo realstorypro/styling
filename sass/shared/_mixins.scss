@@ -1,0 +1,195 @@
+// Misc
+@mixin align_items($prefix, $value){
+  --#{$prefix}align-items: #{$value}
+}
+
+@mixin justify_content($prefix, $value){
+  --#{$prefix}justify-content: #{$value}
+}
+
+@mixin icon_color($prefix, $value){
+  --#{$prefix}icon-color: #{$value}
+}
+
+@mixin box_shadow($prefix, $value){
+  --#{$prefix}box-shadow: #{$value}
+}
+
+// Interactive
+@mixin filter($prefix, $value){
+  --#{$prefix}filter: #{$value}
+}
+
+@mixin perspective($prefix, $value){
+  --#{$prefix}perspective: #{$value}
+}
+
+@mixin animation($prefix, $value){
+  --#{$prefix}animation: #{$value}
+}
+
+@mixin transform($prefix, $value){
+  --#{$prefix}transform: #{$value}
+}
+
+@mixin backdrop_filter($prefix, $value){
+  --#{$prefix}backdrop-filter: #{$value}
+}
+
+@mixin opacity($prefix, $value){
+  --#{$prefix}opacity: #{$value}
+}
+
+// Text
+@mixin font_weight($prefix, $value){
+  --#{$prefix}font-weight: #{$value}
+}
+
+@mixin font_size($prefix, $value){
+  --#{$prefix}font-size: #{$value}
+}
+
+@mixin font_family($prefix, $value){
+  --#{$prefix}font-family: #{$value}
+}
+
+@mixin line_height($prefix, $value){
+  --#{$prefix}line-height: #{$value}
+}
+
+@mixin text_decoration($prefix, $value){
+  --#{$prefix}text-decoration: #{$value}
+}
+
+@mixin text_shadow($prefix, $value){
+  --#{$prefix}text-shadow: #{$value}
+}
+
+@mixin text_fill_color($prefix, $value){
+  --#{$prefix}text-fill-color: #{$value}
+}
+
+@mixin text_color($prefix, $value){
+  --#{$prefix}text-color: #{$value}
+}
+
+@mixin text_decoration($prefix, $value){
+  --#{$prefix}text-decoration: #{$value}
+}
+
+@mixin text_transform($prefix, $value){
+  --#{$prefix}text-transform: #{$value}
+}
+
+@mixin text_align($prefix, $value){
+  --#{$prefix}text-align: #{$value}
+}
+
+@mixin header_color($prefix, $value){
+  --#{$prefix}header-color: #{$value}
+}
+
+// Box Model
+@mixin padding($prefix, $value){
+  --#{$prefix}padding: #{$value}
+}
+
+@mixin padding_top($prefix, $value){
+  --#{$prefix}padding-top: #{$value}
+}
+
+@mixin padding_bottom($prefix, $value){
+  --#{$prefix}padding-bottom: #{$value}
+}
+
+@mixin width($prefix, $value){
+  --#{$prefix}width: #{$value}
+}
+
+@mixin max_width($prefix, $value){
+  --#{$prefix}max-width: #{$value}
+}
+
+@mixin margin($prefix, $value){
+  --#{$prefix}margin: #{$value}
+}
+
+@mixin margin_top($prefix, $value){
+  --#{$prefix}margin-top: #{$value}
+}
+
+@mixin margin_bottom($prefix, $value){
+  --#{$prefix}margin-bottom: #{$value}
+}
+
+@mixin height($prefix, $value){
+  --#{$prefix}height: #{$value}
+}
+
+@mixin min_height($prefix, $value){
+  --#{$prefix}min-height: #{$value}
+}
+
+@mixin bottom_position($prefix, $value){
+  --#{$prefix}bottom-position: #{$value}
+}
+
+@mixin clip_path($prefix, $value){
+  --#{$prefix}clip-path: #{$value}
+}
+
+// Background
+@mixin bg_color($prefix, $value){
+  --#{$prefix}background-color: #{$value}
+}
+
+@mixin bg_image($prefix, $value){
+  --#{$prefix}background-image: #{$value}
+}
+
+@mixin bg_clip($prefix, $value) {
+  --#{$prefix}background-clip: #{$value}
+}
+
+@mixin bg_size($prefix, $value) {
+  --#{$prefix}background-size: #{$value}
+}
+
+@mixin bg_repeat($prefix, $value){
+  --#{$prefix}background-repeat: #{$value}
+}
+
+@mixin bg_position($prefix, $value){
+  --#{$prefix}background-position: #{$value}
+}
+
+// Borders
+@mixin border($prefix, $position: '', $value: ''){
+  @include border_color($prefix, $position, $value);
+  @include border_width($prefix, $position, $value);
+  @include border_style($prefix, $position, $value);
+
+  @if $position == '' {
+    @include border_radius($prefix, $position, $value);
+  }
+}
+
+@mixin border_color($prefix, $position: '', $value: ''){
+  --#{$prefix}border-color: #{$value}
+}
+
+@mixin border_width($prefix, $position: '', $value: ''){
+  --#{$prefix}border-width: #{$value}
+}
+
+@mixin border_style($prefix, $position: '', $value: ''){
+  --#{$prefix}border-style: #{$value}
+}
+
+@mixin border_radius($prefix, $position: '', $value: ''){
+  --#{$prefix}border-radius: #{$value}
+}
+
+@mixin border-svg($prefix, $value){
+  --#{$prefix}border-svg: #{$value}
+}

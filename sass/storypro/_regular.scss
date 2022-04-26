@@ -1,0 +1,14 @@
+#promo-element-275 {
+  @include bottom_position('promo-', '25%');
+  @include text_align('promo-header-', 'center');
+  @include text_align('promo-', 'center');
+  @include font_size('promo-header-', '2.9em');
+  @include bg_color('promo-overlay-', 'rgba(230,11,237,0.3)');
+  @include filter('promo-image-', Saturate(#{tf1(0, 3.5)}));
+  @include text_shadow('promo-header-', '5px 3px 0px rgba(0,0,0,0.5)');
+  @include text_shadow('promo-', '3px 1px 0px rgb(0 0 0)');
+  @include transform('promo-image-', Scale(#{tf1(1, 1.05)}));
+  @include transform('promo-header-', Scale(#{tf1(1, 1.25)}));
+  @include transform('promo-text-', translateY(#{txf1(0, 20)}));
+  @include line_height('promo-header-', '1.1em');
+}
