@@ -171,20 +171,20 @@ $f2: var(--percent-reversed);
 }
 
 // transition n1 & n2 (engager)
-@function tn1($from, $to, $unit: 1) {
+@function tn1($from, $to, $unit: '') {
   @return trans($from, $to, $unit, $n1)
 }
 
-@function tn2($from, $to, $unit: 1) {
+@function tn2($from, $to, $unit: '') {
   @return trans($from, $to, $unit, $n2)
 }
 
 // transition f1 & f2 (snippet)
-@function tf1($from, $to, $unit: 1) {
+@function tf1($from, $to, $unit: '') {
   @return trans($from, $to, $unit, $f1)
 }
 
-@function tf2($from, $to, $unit: 1) {
+@function tf2($from, $to, $unit: '') {
   @return trans($from, $to, $unit, $f2)
 }
 
