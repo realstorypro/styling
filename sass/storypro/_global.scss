@@ -5,6 +5,7 @@
   @include box_shadow('menu-', '0 1px 1px #000');
   @include bg_color('menu-', 'rgba(0,0,0,0.8)');
   @include backdrop_filter('menu-', 'blur(5px)');
+
   @include box_shadow('footer-', '0 -1px 1px #000');
 }
 
@@ -19,6 +20,7 @@
   @include bg_size('author-widget-', 150%);
   @include bg_position('author-widget-', #{tpc1(0, 100)} #{tpc2(5, 50)});
   @include border_svg('author-widget-', '');
+  @include box_shadow('author-widget-', "1px #{txc1(0,5)} 0px 0px rgba(0,0,0,1), 5px #{txc1(0,10)} 0px 0px rgba(0,0,0,0.5), 10px #{txc1(0,15)} 0px 0px rgba(0,0,0,0.25)");
   @include filter('author-widget-', hue-rotate(#{tdc1(0, 330)}) Saturate(#{tc1(0.5, 2.0)}));
   @include filter('author-widget-image-', hue-rotate(#{tdc1(0, -330)}) Saturate(#{tc1(1, 1.0)}));
 
