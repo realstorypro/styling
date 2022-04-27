@@ -3,7 +3,8 @@
   @include border_width('menu-', '', '1px');
   @include border_style('menu-', '', 'solid');
   @include box_shadow('menu-', '0 1px 1px #000');
-
+  @include bg_color('menu-', 'rgba(0,0,0,0.8)');
+  @include backdrop_filter('menu-', 'blur(5px)');
   @include box_shadow('footer-', '0 -1px 1px #000');
 }
 
@@ -25,4 +26,23 @@
   @include bg_position('comments-', center);
   @include filter('comments-', hue-rotate(#{tdc1(0, 30)}));
   @include filter('comment-card-picture-', hue-rotate(#{tdc1(0, -30)}) Saturate(#{tc1(-0.5, 1.5)}));
+}
+
+#discussion-listings {
+  //--link-decoration-color:
+  --link-decoration-thickness: 1px;
+  --link-decoration-color: black;
+  --link-decoration: none;
+}
+
+// Overrides
+.navigation.widget .menu a.item:last-child {
+    @include color('menu-link-', '#e9b2ff');
+    @include bg_clip('menu-link-', text);
+    @include filter('menu-link-', hue-rotate(#{tdg1(0, 360)}));
+}
+
+.external-link:after {
+    content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='hsl(283, 100%25, 85%25)' class='bi bi-box-arrow-up-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z'/%3E%3Cpath fill-rule='evenodd' d='M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z'/%3E%3C/svg%3E");
+    margin-left: 0.75em;
 }

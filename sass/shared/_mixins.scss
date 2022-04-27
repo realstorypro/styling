@@ -1,4 +1,8 @@
 // Misc
+@mixin color($prefix, $value){
+  --#{$prefix}color: #{$value}
+}
+
 @mixin align_items($prefix, $value){
   --#{$prefix}align-items: #{$value}
 }
