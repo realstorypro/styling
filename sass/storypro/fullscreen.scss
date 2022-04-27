@@ -1,0 +1,10 @@
+#element-493 {
+  @include clip_path('header-', "polygon(#{tpf1(30, 0)} 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 69.8%, 0% 30%)");
+
+  @include text_color('fullscreen-credit-', 'white');
+  @include text_color('fullscreen-summary-', 'white');
+  @include text_color('fullscreen-header-', 'white');
+
+  @include font_size('fullscreen-credit-', '100px');
+  @include font_size('fullscreen-credit-mobile-', '25px');
+}
