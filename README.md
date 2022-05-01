@@ -14,6 +14,8 @@ sass --watch sass:compiled
 ``
 
 # Resources
+Check out __samples.scss__ for useful css variables.
+
 ## SVG Resources
 - Images at https://fffuel.co/ssscales/.
 - Encoding with (https://yoksel.github.io/url-encoder/)
