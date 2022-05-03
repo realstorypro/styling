@@ -56,3 +56,42 @@
 
   }
 }
+
+// **** 1 Col Comparison Table **** /
+#element-482 {
+  table {
+    background: linear-gradient(45deg, #ff419e, #9968ea);
+    color: white;
+    transform: scale(#{tf2(1, 1.2)});
+
+    @include media(">tablet") {
+      max-width: 65%;
+      margin: 0 auto
+    }
+
+    th {
+      background: rgba(0,0,0,0.20);
+      width: 50%;
+      text-align: center;
+      color: white;
+      text-transform: uppercase;
+    }
+
+    td {
+      text-align: center;
+    }
+  }
+}
+
+// divider
+#element-4474 {
+  .divider {
+    border-top: none;
+    border-bottom: none;
+    height: 5px;
+    background: blue linear-gradient(90deg, #5461c8 0 12.5%, #c724b1 0 25%, #e4002b 0 37.5%, #ff6900 0 50%, #f6be00 0 62.5%, #97d700 0 75%, #00ab84 0 87.5%, #00a3e0 0 100%);
+    background-position-x: #{txf1(0, 500)};
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
