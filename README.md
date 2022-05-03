@@ -37,3 +37,7 @@ Check out __samples.scss__ for useful css variables.
 ## Masks
 - CSS3 Animations https://codepen.io/lucasgwd/pen/EgqYNe
 - SVG Mask Animation https://codepen.io/supah/pen/zwJxdb
+
+## Shadows
+- https://www.joshwcomeau.com/shadow-palette/
+- https://neumorphism.io
