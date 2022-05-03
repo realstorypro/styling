@@ -14,6 +14,8 @@ sass --watch sass:compiled
 ``
 
 # Resources
+Check out __samples.scss__ for useful css variables.
+
 ## SVG Resources
 - Images at https://fffuel.co/ssscales/.
 - Encoding with (https://yoksel.github.io/url-encoder/)
@@ -35,3 +37,7 @@ sass --watch sass:compiled
 ## Masks
 - CSS3 Animations https://codepen.io/lucasgwd/pen/EgqYNe
 - SVG Mask Animation https://codepen.io/supah/pen/zwJxdb
+
+## Shadows
+- https://www.joshwcomeau.com/shadow-palette/
+- https://neumorphism.io

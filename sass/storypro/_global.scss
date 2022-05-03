@@ -20,16 +20,15 @@
   @include bg_position('author-widget-', #{tpc1(0, 100)} #{tpc2(5, 50)});
   @include border_svg('author-widget-', '');
   @include filter('author-widget-', hue-rotate(#{tdc1(0, 330)}) Saturate(#{tc1(0.5, 2.0)}));
-  @include filter('author-widget-image-', hue-rotate(#{tdc1(0, -330)}) Saturate(#{tc1(1, 1.0)}));
+  @include filter('author-widget-image-', hue-rotate(#{tdc1(0, -330)}) Saturate(#{tc1(1, 1.2)}));
 
   @include bg_color('comments-', #fffeb3);
   @include bg_position('comments-', center);
   @include filter('comments-', hue-rotate(#{tdc1(0, 30)}));
-  @include filter('comment-card-picture-', hue-rotate(#{tdc1(0, -30)}) Saturate(#{tc1(-0.5, 1.5)}));
+  @include filter('comment-card-picture-', hue-rotate(#{tdc1(0, -30)}) Saturate(#{tc1(1, 1.2)}));
 }
 
 #discussion-listings {
-  //--link-decoration-color:
   --link-decoration-thickness: 1px;
   --link-decoration-color: black;
   --link-decoration: none;
@@ -38,6 +37,7 @@
 // Overrides
 .navigation.widget .menu a.item:last-child {
     @include color('menu-link-', '#e9b2ff');
+    @include color('menu-link-hover-', '#e9b2ff');
     @include bg_clip('menu-link-', text);
     @include filter('menu-link-', hue-rotate(#{tdg1(0, 360)}));
 }
