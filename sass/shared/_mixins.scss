@@ -36,6 +36,10 @@
   --#{$prefix}transform: #{$value}
 }
 
+@mixin transition($prefix, $value){
+  --#{$prefix}transition: #{$value}
+}
+
 @mixin backdrop_filter($prefix, $value){
   --#{$prefix}backdrop-filter: #{$value}
 }
@@ -167,6 +171,10 @@
   --#{$prefix}background-position: #{$value}
 }
 
+@mixin bg_attachment($prefix, $value){
+  --#{$prefix}background-attachment: #{$value}
+}
+
 // Borders
 @mixin border($prefix, $position: '', $value: ''){
   @include border_color($prefix, $position, $value);
@@ -183,15 +191,15 @@
 }
 
 @mixin border_width($prefix, $position: '', $value: ''){
-  --#{$prefix}border-width: #{$value}
+  --#{$prefix}#{$position}border-width: #{$value}
 }
 
 @mixin border_style($prefix, $position: '', $value: ''){
-  --#{$prefix}border-style: #{$value}
+  --#{$prefix}#{$position}border-style: #{$value}
 }
 
 @mixin border_radius($prefix, $position: '', $value: ''){
-  --#{$prefix}border-radius: #{$value}
+  --#{$prefix}#{$position}border-radius: #{$value}
 }
 
 @mixin border-svg($prefix, $value){

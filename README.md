@@ -41,3 +41,9 @@ Check out __samples.scss__ for useful css variables.
 ## Shadows
 - https://www.joshwcomeau.com/shadow-palette/
 - https://neumorphism.io
+
+## Backgrounds
+- https://www.magicpattern.design/tools/css-backgrounds
+
+## Borders
+- https://9elements.github.io/

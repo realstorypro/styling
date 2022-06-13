@@ -95,3 +95,21 @@
     margin: 0 auto;
   }
 }
+
+// gradient divider
+#element-4508 {
+  .divider {
+    i {
+      @supports ((background-clip: text) or (-webkit-background-clip: text)) and
+      ((text-fill-color: transparent) or (-webkit-text-fill-color: transparent)) {
+        background: linear-gradient(45deg, #ff419e, #9968ea);
+        background-size: 400%;
+        background-size: cover;
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-fill-color: transparent;
+      }
+    }
+  }
+}
